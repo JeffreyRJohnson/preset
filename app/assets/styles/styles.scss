@@ -1,2 +1,7 @@
-@import "modules/variables";
-@import "partials/site-header";
+@import 'base/reset';
+@import 'base/typography';
+@import 'helpers/functions';
+@import 'helpers/mixins';
+@import 'helpers/variables';
+@import 'layout/header.scss';
+@import 'layout/footer';

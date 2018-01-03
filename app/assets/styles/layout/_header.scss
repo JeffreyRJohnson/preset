@@ -1,0 +1,102 @@
+.primary-nav {
+  align-items: center;
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  @include atMedium {
+    padding-top: 80px;
+  }
+  @include atLarge {
+    padding-top: 20px;
+  }
+}
+
+.primary-nav__logo {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  text-decoration: none;
+  font-size: 2.4em;
+  font-size: 24px;
+  font-weight: 600;
+  @include atMedium {
+    left: 60px;
+  }
+  @include atLarge {
+    left: 10%;
+  }
+  @include atExtraLarge {
+    left: 20%;
+  }
+}
+
+.primary-nav__burger {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  display: inline-block;
+  font-size: 2.4em;
+  &:hover {
+    cursor: pointer;
+  }
+  @include atMedium {
+    display: none;
+  }
+}
+
+.primary-nav__row {
+  display: none;
+  width: 100%;
+  margin-top: 70px;
+  @include atMedium {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-right: 45px;
+    margin-left: 45px;
+    background: none;
+    margin-top: 0px;
+  }
+  @include atLarge {
+    justify-content: flex-end;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  @include atExtraLarge {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+.primary-nav__row--open {
+  display: block;
+  padding: 4px 0;
+}
+
+.primary-nav__link {
+  text-decoration: none;
+  font-size: 0.8em;
+  padding-bottom: 10px;
+  &:hover {
+    color: black;
+    @include atMedium {
+      color: #fff;
+    }
+  }
+}
+
+.primary-nav__list {
+  display: block;
+  padding: 5px 0;
+  text-align: center;
+  font-size: 1.4em;
+  @include atSmall {
+    padding: 8px 0;
+  }
+  @include atMedium {
+    display: inline-block;
+    padding: 0 0.4rem;
+  }
+}
